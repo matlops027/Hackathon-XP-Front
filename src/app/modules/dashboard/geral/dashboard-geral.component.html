@@ -1,1 +1,29 @@
-<p>login</p>
+<div class="card g-doughnut flex-row flex-wrap py-2 py-xl-4 px-xl-1 mb-2">
+  <div class="col-md-3 py-2 py-xl-3">
+    <app-doughnut-chart
+      [labels]     = "datadoughnut?.labels"
+      [data]       = "datadoughnut?.data"
+      [colors]     = "datadoughnut?.colors"
+      [typeLabels] = "2"
+      [radius]     = "75"
+    ></app-doughnut-chart>
+  </div>
+  <div class="col-md-3 py-2 py-xl-3">
+    <app-doughnut-chart
+      [labels]     = "datadoughnut?.labels"
+      [data]       = "datadoughnut?.data"
+      [colors]     = "datadoughnut?.colors"
+      [typeLabels] = "2"
+      [radius]     = "75"
+    ></app-doughnut-chart>
+  </div>
+  <div class="col-md-6 py-2 py-xl-3">
+    <app-horizontal-bar-chart
+      [labels]       = "dataHorizontalBar?.labels"
+      [colors]       = "dataHorizontalBar?.colors"
+      [data]         = "dataHorizontalBar?.data"
+      [showTicksX]   = "true"
+      [showLines]    = "false"
+    ></app-horizontal-bar-chart>
+  </div>
+</div>
