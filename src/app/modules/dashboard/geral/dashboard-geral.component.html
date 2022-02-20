@@ -1,3 +1,15 @@
+<div class="row">
+  <div class="col-md-6 col-lg-6 col-xl-6 pr-md-1">
+    <div class="card mb-2">
+      <div class="card-header d-flex justify-content-center align-items-center py-2"><h4 class="m-0">Disponível x Investidos</h4></div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-6 col-xl-6 pr-md-1">
+    <div class="card mb-2">
+      <div class="card-header d-flex justify-content-center align-items-center py-2"><h4 class="m-0">Contas</h4></div>
+    </div>
+  </div>
+</div>
 <div class="card g-doughnut flex-row flex-wrap py-2 py-xl-4 px-xl-1 mb-2">
   <div class="col-md-3 py-2 py-xl-3">
     <app-doughnut-chart
@@ -22,6 +34,7 @@
       [labels]       = "dataHorizontalBar?.labels"
       [colors]       = "dataHorizontalBar?.colors"
       [data]         = "dataHorizontalBar?.data"
+      [formatter]    = "['start', 'R$']"
       [showTicksX]   = "true"
       [showLines]    = "false"
     ></app-horizontal-bar-chart>
