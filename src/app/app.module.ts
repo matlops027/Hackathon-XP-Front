@@ -9,6 +9,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthModule } from './modules/auth/auth.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 
+import { HttpClientModule } from '@angular/common/http';
+import { InterceptorModule } from './interceptors/interceptor.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -20,7 +23,9 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     ComponentsModule,
     NgbModule,
     AuthModule,
-    DashboardModule
+    DashboardModule,
+    HttpClientModule,
+    InterceptorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

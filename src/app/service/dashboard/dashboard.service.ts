@@ -7,7 +7,7 @@ import { URL_API } from 'src/app/utils/global-variables';
 export class DashboardService {
   constructor(private http: HttpClient) {}
 
-  getData(objParam) {
-    return this.http.get<any>(URL_API + `/bank/${objParam.bank}/users/${objParam.userId}/investments`);
+  getData() {
+    return this.http.get<any>(URL_API + `/banks`);
   }
 }
