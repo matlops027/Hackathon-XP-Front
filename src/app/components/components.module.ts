@@ -1,12 +1,17 @@
 
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from '../app-routing.module';
 import { MenuComponent } from './menu/menu.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
-    MenuComponent
+    MenuComponent,
+    LandingComponent
   ],
-  imports: [],
+  imports: [
+    AppRoutingModule,
+  ],
   providers: []
 })
 export class ComponentsModule { }
