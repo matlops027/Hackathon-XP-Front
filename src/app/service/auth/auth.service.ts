@@ -11,4 +11,8 @@ export class AuthService {
   getUser(objParam) {
     return this.http.get<any>(URL_API + `/bank/${objParam.bank}/users/${objParam.userId}/investments`);
   }
+
+  loginUser(userName) {
+    return this.http.get<any>(URL_API + `/users/${userName}`)
+  }
 }

@@ -48,7 +48,8 @@ export class Interceptor implements HttpInterceptor {
             {
                 headers: new HttpHeaders()
                     .set('Content-Type', 'application/x-www-form-urlencoded')
+                    .set('Access-Control-Allow-Origin', '*')
             }
-            );
+          );
     }
 }
