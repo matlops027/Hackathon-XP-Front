@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
   constructor(private route: Router) { }
 
   ngOnInit(): void {
-    this.route.navigate(['/login']);
+    this.route.navigate(['/landing']);
   }
 
 }
