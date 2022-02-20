@@ -11,12 +11,12 @@ const routes: Routes = [
     component: MenuComponent,
     children: [
       {
-        path: 'login',
-        component: LoginComponent
-      },
-      {
         path: 'landing',
         component: LandingComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent
       }
     ]
   }

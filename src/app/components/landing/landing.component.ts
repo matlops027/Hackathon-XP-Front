@@ -11,7 +11,6 @@ export class LandingComponent implements OnInit {
   constructor(private route: Router) { }
 
   ngOnInit(): void {
-    this.route.navigate(['/']);
   }
 
 }
