@@ -8,10 +8,6 @@ import { URL_API } from 'src/app/utils/global-variables';
 export class AuthService {
   constructor(private http: HttpClient) {}
 
-  getUser(objParam) {
-    return this.http.get<any>(URL_API + `/bank/${objParam.bank}/users/${objParam.userId}/investments`);
-  }
-
   loginUser(userName) {
     return this.http.get<any>(URL_API + `/users/${userName}`)
   }

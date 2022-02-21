@@ -1,28 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-import { DashboardService } from 'src/app/service/dashboard/dashboard.service';
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/service/auth/auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
+
+  form: FormGroup;
 
   constructor(
-      private dashboardService: DashboardService
-  ) { }
-
-  ngOnInit(): void {
+    private router: Router,
+    private authService: AuthService,
+    private fb: FormBuilder
+  ) {
+    this.form = this.fb.group({
+      userName: ['',Validators.required]
+    });
   }
 
-  getBanks(){
-    this.dashboardService.getData().subscribe(
-      data => {
-        console.log(data)
-      }, error => {
-        console.log(error)
-      }
-    )
+  onSubmit(): void {
+    this.router.navigate(['/dashboard-geral']);
   }
+
 
 }

@@ -6,13 +6,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" [routerLink]="['/login']">Login</a>
+                <li *ngFor="let page of menuList" class="nav-item">
+                    <div class="nav-link" [ngClass]="{'active': (page.name === currentMenu)}" (click)="changePage(page)">{{page.name}}</div>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 <div class="content">
-    <router-outlet></router-outlet>
+    <router-outlet (activate)='onActivate($event)'></router-outlet>
 </div>

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
 import { LoginComponent } from './modules/auth/login/login.component';
-import { LandingComponent } from './components/landing/landing.component';
+import { DashboardGeralComponent } from './modules/dashboard/geral/dashboard-geral.component';
 
 
 const routes: Routes = [
@@ -11,12 +11,12 @@ const routes: Routes = [
     component: MenuComponent,
     children: [
       {
-        path: 'landing',
-        component: LandingComponent
-      },
-      {
         path: 'login',
         component: LoginComponent
+      },
+      {
+        path: 'dashboard-geral',
+        component: DashboardGeralComponent
       }
     ]
   }
