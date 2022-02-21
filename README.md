@@ -1,5 +1,13 @@
 # HackathonXpFront
 
+Olá, tudo bem?
+
+Este é o projeto da equipe 20 da Hackathon da XP, focado em demonstrar uma comparação entre os gastos pessoais (em cartão de crédito, por exemplo), suas receitas mensais e também seus investimentos pessoais. A ideia é de verificar o perfil de investimento do usuário (suitability) e indicar os investimentos com maior aderência ao perfil indicado.
+
+O projeto possui uma estrutura de microserviços, utilizando um motor de back-end (disponível no repositório https://github.com/altnetto/Hackathon-XP), que realiza os intermédios entre a API fornecida pela XP. A camada do cliente (front-end) é realizada neste repositório.
+
+------------------
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
 ## Development server
